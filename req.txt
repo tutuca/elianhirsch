@@ -1,0 +1,7 @@
+Django==1.1.1
+Markdown==2.0.3
+django-mptt==0.3-pre
+docutils==0.6
+ipython==0.10
+python-dateutil==1.4.1
+simplejson==2.0.9
