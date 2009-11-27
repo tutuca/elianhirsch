@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" xml:lang="{{ LANGUAGE_CODE }}" lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}Elian Hirsch</title>
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/base.css" type="text/css" media="screen" />    
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/layout.css" type="text/css" media="screen" />    
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            {% block content%}
+            {% endblock content%}
+        </div>
+        <div id="nav">
+            <ul><li><a href="{% url index %}" rel="index">Elian Hirsch</a></li></ul>
+            {% block nav%}
+            {% endblock nav%}            
+        </div>
+        <div id="legal">
+            <a href="#"><img src="{{ MEDIA_URL }}img/cc.png" alt="creative commons logo" />	
+            Some rights reserved
+            </a>            
+        </div>
+        <div class="visualClear"></div>
+    </div>
+</body>
+
+</html>

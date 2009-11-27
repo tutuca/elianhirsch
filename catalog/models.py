@@ -1,14 +1,14 @@
 from django.db import models
 from django.template.defaultfilters import slugify
-
 from PIL import Image
 import mptt
-
+import os
 
 class Foto(models.Model):
     name = models.CharField(max_length=60)
     image = models.ImageField(upload_to='images', blank= True)
-   
+    created = models.DateTimeField(auto_now_add=True, editable = False)
+    serie = models.ForeignKey('Serie')
     class Meta:
         ordering = ('created',)
 
@@ -16,33 +16,43 @@ class Foto(models.Model):
         filehead, filetail = os.path.split(self.image.path)
         return filetail
 
-#    def save(self, *args, **kwargs):
+    def save(self, *args, **kwargs):
 
-#        galeria_name = slugify(self.galeria.title)
-#        upload_to = self.image.field.upload_to
-#        if galeria_name not in upload_to.split('/'):
-#            upload_to = 'images/%s'%(galeria_name,)        
 
-#        self.image.field.upload_to = upload_to
+        upload_to = self.image.field.upload_to
+        if self.serie.slug not in upload_to.split('/'):
+            upload_to = 'images/%s'%(self.serie.slug,)        
 
-#        super(Foto, self).save(*args, **kwargs)
+        self.image.field.upload_to = upload_to
+
+        super(Foto, self).save(*args, **kwargs)
 
 
 class Category (models.Model):
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     name = models.CharField(max_length=60)
-    parent = models.ForeignKey('Category')
+    parent = models.ForeignKey('Category', blank= True, null=True)
+    
+    def __unicode__(self):
+        return self.name
+
+    class Meta ():
+        verbose_name_plural = 'Categories'
     
 class Serie (models.Model):
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     name = models.CharField(max_length=60)
-    description = model.TextField()
-    pictures = models.ForeignKey('Foto')
+    description = models.TextField()
+    category = models.ForeignKey('Category')
+
+    def __unicode__(self):
+        return self.name
+
     
-
-
-try:
-    mptt.register(Categoria, order_insertion_by=['nombre'])
-except mptt.AlreadyRegistered():
+try: 
+    mptt.register(Category)  
+except mptt.AlreadyRegistered:
+    '''Fail Silently'''
+    pass
     
     
