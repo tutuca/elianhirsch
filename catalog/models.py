@@ -6,6 +6,7 @@ import os
 
 class Foto(models.Model):
     name = models.CharField(max_length=60)
+    detail = models.CharField(max_length=60)
     image = models.ImageField(upload_to='images', blank= True)
     created = models.DateTimeField(auto_now_add=True, editable = False)
     serie = models.ForeignKey('Serie')

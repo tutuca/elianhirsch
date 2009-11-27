@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>{% block title %}{% endblock %}Elian Hirsch</title>
-    <link rel="stylesheet" href="{{ MEDIA_URL }}css/base.css" type="text/css" media="screen" />    
-    <link rel="stylesheet" href="{{ MEDIA_URL }}css/layout.css" type="text/css" media="screen" />    
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/base.css" type="text/css" media="screen" />    
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/css/layout.css" type="text/css" media="screen" />    
 </head>
 <body>
     <div id="wrapper">
@@ -13,16 +13,18 @@
             {% endblock content%}
         </div>
         <div id="nav">
-            <ul><li><a href="{% url index %}" rel="index">Elian Hirsch</a></li></ul>
+            <a id="logo" href="{% url index %}" rel="index">Elian Hirsch</a>
+            <ul><li><a href="{% url work %}" rel="index">Work</a></li>
+                <li><a href="{% url about %}" rel="index">About</a></li>
+                <li><a href="{% url contact %}" rel="index">Contact</a></li>
+            </ul>
             {% block nav%}
             {% endblock nav%}            
-        </div>
-        <div id="legal">
-            <a href="#"><img src="{{ MEDIA_URL }}img/cc.png" alt="creative commons logo" />
+            <a href="#" id="legal"><img src="{{ MEDIA_URL }}img/cc.png" alt="creative commons logo" />
             Some rights reserved
-            </a>            
+            </a>         
         </div>
-        <div class="visualClear"></div>
+   
     </div>
 </body>
 

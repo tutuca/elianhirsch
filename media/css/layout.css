@@ -1,0 +1,29 @@
+#wrapper{
+    width:90em;
+    margin:2em auto;
+    padding:0;
+    text-align:left;
+
+}
+#content{
+    padding:2em;
+    background:#FFF;
+}
+#nav {
+    margin-top:0.5em;
+}
+#nav a {
+    text-decoration:none;
+}
+#logo {
+    float:left;
+}
+#nav ul{
+    float:left;
+    margin-left:0.5em;
+    border-left:1px solid #FFF;
+    padding-left:0.5em;
+}
+#legal{
+    float:right;
+}

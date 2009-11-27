@@ -6,6 +6,7 @@
       "serie": 1, 
       "image": "images/copenaghen/crisis.jpg", 
       "name": "crisis", 
+      "detail": "Size of the detail 10x10", 
       "created": "2009-11-27 15:05:50"
     }
   }, 
@@ -16,6 +17,7 @@
       "serie": 1, 
       "image": "images/copenaghen/crisis2.jpg", 
       "name": "crisis2", 
+      "detail": "Size of the detail 10x10", 
       "created": "2009-11-27 15:06:05"
     }
   }, 
@@ -26,6 +28,7 @@
       "serie": 1, 
       "image": "images/copenaghen/misho.jpg", 
       "name": "misho", 
+      "detail": "Size of the detail 10x10", 
       "created": "2009-11-27 15:06:23"
     }
   }, 
@@ -34,6 +37,7 @@
     "model": "catalog.foto", 
     "fields": {
       "serie": 1, 
+      "detail": "Size of the detail 10x10", 
       "image": "images/copenaghen/portada.jpg", 
       "name": "portada", 
       "created": "2009-11-27 15:06:39"
@@ -46,6 +50,7 @@
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
       "name": "ship", 
+      "detail": "Size of the detail 10x10", 
       "created": "2009-11-27 15:06:56"
     }
   }, 

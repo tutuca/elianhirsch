@@ -1,11 +1,15 @@
 {% extends 'master.html' %}
+{% load thumbnails %}
 {% block title %}{{object.name}} |{% endblock %}
 {% block content %}
-
-<h1>{{object.name}}</h1>
 <a href="{% url gallery object.slug %}">View description</a>
+<h1>{{object.name}}</h1>
+
+
 {% for foto in object.foto_set.all %}
-<img src="{{foto.image.url}}" alt="{{foto.name}}" />
+<a href="{% url foto foto.id %}">
+<img src="{{MEDIA_URL}}{{foto.image|thumbnail:'110x110'}}" alt="{{foto.name}}" />
+</a>
 {% empty %}
 {%endfor%}
 {% endblock content %}
