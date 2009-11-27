@@ -1,5 +1,7 @@
 *~
 *.pyc
 *.db
+media/images/*.*
 pip-log.txt
+
 
