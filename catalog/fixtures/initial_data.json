@@ -1,0 +1,76 @@
+[
+  {
+    "pk": 1, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/crisis.jpg", 
+      "name": "crisis", 
+      "created": "2009-11-27 15:05:50"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/crisis2.jpg", 
+      "name": "crisis2", 
+      "created": "2009-11-27 15:06:05"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/misho.jpg", 
+      "name": "misho", 
+      "created": "2009-11-27 15:06:23"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/portada.jpg", 
+      "name": "portada", 
+      "created": "2009-11-27 15:06:39"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 2, 
+      "name": "Art", 
+      "parent": null, 
+      "level": 0, 
+      "lft": 1, 
+      "tree_id": 1, 
+      "slug": "art"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "catalog.serie", 
+    "fields": {
+      "category": 1, 
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      "created": "2009-11-27 15:05:50", 
+      "slug": "copenaghen", 
+      "name": "Copenaghen Serie"
+    }
+  }
+]

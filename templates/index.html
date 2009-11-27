@@ -1,0 +1,9 @@
+{% extends 'master.html' %}
+{% block title %}Wellcome |{% endblock %}
+{% block content %}
+
+<h1>{{object.name}}</h1>
+<a href="{% url gallery object.slug %}">View Gallery</a>
+<p>{{object.description}}</p>
+
+{% endblock content %}

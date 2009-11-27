@@ -1,0 +1,740 @@
+[
+  {
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_logentry", 
+      "name": "Can add log entry", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_logentry", 
+      "name": "Can change log entry", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_logentry", 
+      "name": "Can delete log entry", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_group", 
+      "name": "Can add group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_message", 
+      "name": "Can add message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_permission", 
+      "name": "Can add permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_user", 
+      "name": "Can add user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_group", 
+      "name": "Can change group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_message", 
+      "name": "Can change message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_permission", 
+      "name": "Can change permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_user", 
+      "name": "Can change user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_group", 
+      "name": "Can delete group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_message", 
+      "name": "Can delete message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_permission", 
+      "name": "Can delete permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_user", 
+      "name": "Can delete user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_category", 
+      "name": "Can add category", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_foto", 
+      "name": "Can add foto", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_serie", 
+      "name": "Can add serie", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_category", 
+      "name": "Can change category", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_foto", 
+      "name": "Can change foto", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_serie", 
+      "name": "Can change serie", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_category", 
+      "name": "Can delete category", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_foto", 
+      "name": "Can delete foto", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_serie", 
+      "name": "Can delete serie", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_contenttype", 
+      "name": "Can add content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_contenttype", 
+      "name": "Can change content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_contenttype", 
+      "name": "Can delete content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_session", 
+      "name": "Can add session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_session", 
+      "name": "Can change session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_session", 
+      "name": "Can delete session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_site", 
+      "name": "Can add site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_site", 
+      "name": "Can change site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_site", 
+      "name": "Can delete site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2009-11-26 23:29:20", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$cf767$651d42732eb99f28cad4bbb4fa49951bc9328445", 
+      "email": "admin@admin.com", 
+      "date_joined": "2009-11-26 23:26:12"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "category", 
+      "name": "category", 
+      "app_label": "catalog"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "contenttype", 
+      "name": "content type", 
+      "app_label": "contenttypes"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "foto", 
+      "name": "foto", 
+      "app_label": "catalog"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "group", 
+      "name": "group", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "logentry", 
+      "name": "log entry", 
+      "app_label": "admin"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "message", 
+      "name": "message", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "permission", 
+      "name": "permission", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "serie", 
+      "name": "serie", 
+      "app_label": "catalog"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "session", 
+      "name": "session", 
+      "app_label": "sessions"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "site", 
+      "name": "site", 
+      "app_label": "sites"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "user", 
+      "name": "user", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": "d26c9c7acc449b884880cf0cf43d5c90", 
+    "model": "sessions.session", 
+    "fields": {
+      "expire_date": "2009-12-10 23:29:20", 
+      "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5k\ncy5Nb2RlbEJhY2tlbmRxA1UNX2F1dGhfdXNlcl9pZHEESwF1LmM3ZWRjZTBkNjkwYjA5NjYwM2Vl\nOGU0MWI0MGY5ODA0\n"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "sites.site", 
+    "fields": {
+      "domain": "example.com", 
+      "name": "example.com"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-27 15:06:56", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"ship.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-27 15:06:39", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"portada.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-27 15:06:23", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"misho.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-27 15:06:05", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"crisis2.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-27 15:05:50", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-27 15:05:00", 
+      "object_repr": "Art", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-26 23:51:56", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"crisis2.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:51:39", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:50:55", 
+      "object_repr": "Work", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-26 23:49:01", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"humor2.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-26 23:47:36", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "A\u00f1adido/a \"crisis2.jpg\" foto.", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:46:47", 
+      "object_repr": "Copenaghen Serie", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:46:35", 
+      "object_repr": "Work", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 3, 
+      "action_time": "2009-11-26 23:44:00", 
+      "object_repr": "Serie object", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:43:42", 
+      "object_repr": "Serie object", 
+      "object_id": "2", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:43:28", 
+      "object_repr": "Serie object", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 2, 
+      "action_time": "2009-11-26 23:34:10", 
+      "object_repr": "Work", 
+      "object_id": "1", 
+      "change_message": "No ha cambiado ning\u00fan campo.", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "admin.logentry", 
+    "fields": {
+      "action_flag": 1, 
+      "action_time": "2009-11-26 23:33:25", 
+      "object_repr": "Category object", 
+      "object_id": "1", 
+      "change_message": "", 
+      "user": 1, 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/crisis.jpg", 
+      "name": "crisis", 
+      "created": "2009-11-27 15:05:50"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/crisis2.jpg", 
+      "name": "crisis2", 
+      "created": "2009-11-27 15:06:05"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/misho.jpg", 
+      "name": "misho", 
+      "created": "2009-11-27 15:06:23"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/portada.jpg", 
+      "name": "portada", 
+      "created": "2009-11-27 15:06:39"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 2, 
+      "name": "Art", 
+      "parent": null, 
+      "level": 0, 
+      "lft": 1, 
+      "tree_id": 1, 
+      "slug": "art"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "catalog.serie", 
+    "fields": {
+      "category": 1, 
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+      "created": "2009-11-27 15:05:50", 
+      "slug": "copenaghen", 
+      "name": "Copenaghen Serie"
+    }
+  }
+]

@@ -44,7 +44,11 @@ class Serie (models.Model):
     name = models.CharField(max_length=60)
     description = models.TextField()
     category = models.ForeignKey('Category')
+    created = models.DateTimeField(auto_now_add=True, editable = False)
 
+    class Meta:
+        ordering = ('created',)
+            
     def __unicode__(self):
         return self.name
 

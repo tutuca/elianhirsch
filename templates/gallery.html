@@ -1,0 +1,11 @@
+{% extends 'master.html' %}
+{% block title %}{{object.name}} |{% endblock %}
+{% block content %}
+
+<h1>{{object.name}}</h1>
+<a href="{% url gallery object.slug %}">View description</a>
+{% for foto in object.foto_set.all %}
+<img src="{{foto.image.url}}" alt="{{foto.name}}" />
+{% empty %}
+{%endfor%}
+{% endblock content %}
