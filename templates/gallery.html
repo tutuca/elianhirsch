@@ -1,15 +1,18 @@
-{% extends 'master.html' %}
+{% extends 'work.html' %}
 {% load thumbnails %}
 {% block title %}{{object.name}} |{% endblock %}
 {% block content %}
-<a href="{% url gallery object.slug %}">View description</a>
-<h1>{{object.name}}</h1>
+<a id="browse-link" href="{% url serie serie.slug %}">View description</a>
+<h1>{{serie.name}}</h1>
 
-
-{% for foto in object.foto_set.all %}
+<div id="main" class="gallery">
+{% for foto in object_list %}
 <a href="{% url foto foto.id %}">
 <img src="{{MEDIA_URL}}{{foto.image|thumbnail:'110x110'}}" alt="{{foto.name}}" />
 </a>
 {% empty %}
-{%endfor%}
+I'm still uploading pictures here
+{%endfor%}    
+</div>
+
 {% endblock content %}

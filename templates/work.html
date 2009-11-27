@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+{% load thumbnails %}
+{% block title %}Work List | {% endblock %}
+{% block content %}
+<div id="main">
+    {% for object in object_list %}
+    <h1><a href="{% url serie object.slug %}">{{ object.name }}</a></h1>
+    {% with object.foto_set.all.1 as foto %}
+    <img class="work_pic" 
+         src="{{MEDIA_URL}}/{{ foto.image|thumbnail:'110x110' }}" 
+         alt="{{ foto }}">
+    {%endwith%}
+    <p>{{ object.description|truncatewords:'50' }}</p>
+    <div class="visualClear"></div>
+    {% endfor %}
+</div>
+{% endblock content %}
+{% block nav %}
+    <li><a class="selected" href="{% url work %}" rel="index">Work</a></li>
+    <li><a href="{% url about %}" rel="index">About</a></li>
+    <li><a href="{% url contact %}" rel="index">Contact</a></li>
+{% endblock nav %}            
+
