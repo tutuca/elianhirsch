@@ -55,6 +55,127 @@
     }
   }, 
   {
+    "pk": 6, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  },   
+  {
+    "pk": 16, 
+    "model": "catalog.foto", 
+    "fields": {
+      "serie": 1, 
+      "image": "images/copenaghen/ship.jpg", 
+      "name": "ship", 
+      "detail": "Size of the detail 10x10", 
+      "created": "2009-11-27 15:06:56"
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "catalog.category", 
     "fields": {

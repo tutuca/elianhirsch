@@ -29,6 +29,12 @@
     width:24em;
     height:40em;    
 }
+#extra.gallery {text-align:center}
+#extra.gallery a {
+    float:none;
+    display:block;
+    margin:5em auto;
+}
 #logo {
     float:left;
 }
@@ -61,7 +67,19 @@
 #legal img {
     vertical-align:middle;
 }
+.gallery a {
+    float:left;   
+    margin:0 4em 3em 0;
+}
 
+.gallery .last{
+    float:right;   
+    margin:0;
+}
+.pager {
+    clear:both;
+    text-align:right;
+}
 .img_navigation{
     position:relative;
     width:110px;

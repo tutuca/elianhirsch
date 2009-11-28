@@ -1,5 +1,6 @@
 from django.views.generic import list_detail
-from models import Serie, Foto
+from django.shortcuts import get_object_or_404
+from models import Serie, Foto, Category
 
 def index(request):
     series = Serie.objects.all()
@@ -9,18 +10,28 @@ def index(request):
                 slug=last_serie.slug,
                 template_name='index.html')
                 
-def work(request):
-    series = Serie.objects.all()
+def work(request, cat_slug=None):
+    category = None
+    if cat_slug :
+        category = get_object_or_404(Category,slug=cat_slug)
+        series = Serie.objects.filter(category=category.id)
+    else :
+        series = Serie.objects.all()
+    
     return list_detail.object_list(request, 
                 series,
                 paginate_by=4,
+                extra_context={'category':category},
                 template_name='work.html')
 
-def serie(request, serie_slug):
-    series = Serie.objects.all()
+def serie(request,cat_slug, serie_slug):
+    category = get_object_or_404(Category,slug=cat_slug)
+    series = Serie.objects.filter(category=category.id)
+
     return list_detail.object_detail(request, 
                 series,
                 slug=serie_slug,
+                extra_context = {'descendants':category.get_descendants()},
                 template_name='serie.html')
 
 
@@ -29,7 +40,7 @@ def gallery(request, serie_slug):
     fotos = serie.foto_set.all()
     return list_detail.object_list(request, 
                 fotos,
-                paginate_by=5,
+                paginate_by=12,
                 extra_context={'serie':serie},
                 template_name='gallery.html')
 

@@ -1,0 +1,21 @@
+<p class="pager">
+    {% if has_previous %}
+    <a href="?page={{ previous }}" title="to page {{ previous }}">
+        <span>Previous</span> 
+    </a> 
+    {% endif %}
+    
+    {% for pag in page_range %}
+      {%ifequal page pag %}
+        <strong>{{ pag }}</strong>
+      {% else %}
+        <a href="?page={{ pag }}" title="to page {{ pag }}">{{ pag }}</a>
+      {% endifequal %} {%if not forloop.last%}|{% endif %}
+    {% endfor %}
+    
+    {% if has_next %}
+    <a href="?page={{ next }}" title="to page {{ next }}">
+        <span>Next</span> 
+    </a>
+    {% endif %}
+</p>

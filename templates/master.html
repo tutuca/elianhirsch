@@ -15,13 +15,14 @@
         </div>
         <div id="nav">
             <a id="logo" href="{% url index %}" rel="index">Elian Hirsch</a>
-            <ul>
             {% block nav %}
+            <ul>
                 <li><a href="{% url work %}" rel="index">Work</a></li>
                 <li><a href="{% url about %}" rel="index">About</a></li>
                 <li><a href="{% url contact %}" rel="index">Contact</a></li>
-            {% endblock nav %}            
+
             </ul>
+            {% endblock nav %}            
             <a href="#" id="legal"><img src="{{ MEDIA_URL }}/img/cc_logo.jpg" alt="creative commons logo" />
             Some rights reserved
             </a>         
