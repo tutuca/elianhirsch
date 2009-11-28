@@ -1,8 +1,7 @@
 {% extends 'master.html' %}
 {% load thumbnails mptt_tags %}
 {% block title %}Work List | {% endblock %}
-{% block content %}
-<div id="main">
+{% block main %}
     {% for object in object_list %}
     <h1><a href="{% url serie object.category.slug object.slug %}">{{ object.name }}</a></h1>
     {% with object.foto_set.all.1 as foto %}
@@ -15,10 +14,9 @@
     {% empty %}
     Still uploading series to this category, please come back later
     {% endfor %}
-</div>
-{% include 'pager.html' %}
-
-{% endblock content %}
+    
+{% endblock main %}
+{% block extra %}{% include 'pager.html' %}{% endblock %}
 {% block nav %}
 <ul>
     <li><a class="selected" href="{% url work %}">Work</a></li>

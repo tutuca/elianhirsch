@@ -1,20 +1,24 @@
 {% extends 'work.html' %}
 {% load thumbnails %}
 {% block title %}Wellcome |{% endblock %}
-{% block content %}
-<a id="browse-link" href="{% url gallery object.slug %}">View Gallery</a>
+{% block main %}
+
 <h1>{{object.name}}</h1>
-<div id="main"><p>{{object.description}}</p></div>
-<div id="extra" class="gallery">
+<p>{{object.description}}</p>
+{% endblock %}
+{% block extra %}
+<a id="browse-link" href="{% url gallery object.slug %}">View Gallery</a>
+
+<p class="gallery">
     {% with object.foto_set.all.1 as foto %}
-    <a href="{% url foto foto.id %}">
+    <a href="{% url foto foto.id %}" class="sample">
        <img src="{{MEDIA_URL}}/{{foto.image|thumbnail:'150x150'}}" />
     </a>
     {% endwith %}
     {% with object.foto_set.all.2 as foto %}
-    <a href="{% url foto foto.id %}">
+    <a href="{% url foto foto.id %}" class="sample">
        <img src="{{MEDIA_URL}}/{{foto.image|thumbnail:'150x150'}}" />
     </a>
     {% endwith %}
-</div>
-{% endblock content %}
+</p>
+{% endblock %}

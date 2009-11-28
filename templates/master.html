@@ -8,10 +8,14 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="content">
-            {% block content%}
-            {% endblock content%}
-        <div class="visualClear"></div>
+        <div id="main">
+            {% block main%}
+            {% endblock %}
+
+        </div>
+        <div id="extra">
+            {% block extra%}
+            {% endblock %}
         </div>
         <div id="nav">
             <a id="logo" href="{% url index %}" rel="index">Elian Hirsch</a>

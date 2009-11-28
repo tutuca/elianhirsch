@@ -1,11 +1,10 @@
 {% extends 'work.html' %}
 {% load thumbnails %}
 {% block title %}{{serie.name}} |{% endblock %}
-{% block content %}
-<a id="browse-link" href="{% url serie serie.category.slug,serie.slug %}">View description</a>
+{% block main %}
 <h1>{{serie.name}}</h1>
 
-<div id="main" class="gallery">
+<div class="gallery">
 {% for foto in object_list %}
 <a href="{% url foto foto.id %}"
 {% if forloop.counter|divisibleby:'4' %}
@@ -20,6 +19,8 @@ I'm still uploading pictures here
 {%endfor%}    
 
 </div>
+{% endblock main %}
+{% block extra %}
+<a id="browse-link" href="{% url serie serie.category.slug,serie.slug %}">View description</a>
 {% include 'pager.html' %}
-
-{% endblock content %}
+{% endblock extra %}

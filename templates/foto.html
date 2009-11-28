@@ -1,19 +1,15 @@
 {% extends 'work.html' %}
 {% load thumbnails %}
 {% block title %}{{object.name}} |{% endblock %}
-{% block content %}
-<a id="browse-link" href="{% url gallery object.serie.slug %}">Back to Gallery</a>
-
+{% block main %}
 <h1>{{object.serie.name}}</h1>
-
-<div class="visualClear"></div>
-
-<div id="main" 
-     class="img_detail">
+<div class="img_detail">
      <img src="{{MEDIA_URL}}/{{object.image}}" 
           alt="{{object.name}} detail" />
 </div>
-<div id="extra">
+{% endblock main %}
+{% block extra %}
+<a id="browse-link" href="{% url gallery object.serie.slug %}">Back to Gallery</a>
     <div class="img_navigation" >
         <a href="#" class="handle">
             <span>Drag me to see the detail on the bigger picture</span></a>
@@ -26,5 +22,5 @@
     <p class="discreet">{{object.detail}}</p>
     </div>
 
-</div>
-{% endblock content %}
+{% endblock extra %}
+

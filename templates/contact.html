@@ -1,0 +1,45 @@
+{% extends 'master.html' %}
+{% load thumbnails %}
+{% block title %}About {% endblock %}
+{% block main %}
+<h1>Contact the artist</h1>
+<form action="/mail_this/" method="post">
+    <p class="honeypot">
+        <input type="text" name="honeypot" value="" id="name" />
+    </p>
+    <p>
+        <label for="name">Your name</label>
+        <input type="text" name="name" value="" id="name" />
+    </p><p>
+    <label for="email">E-mail Address</label>
+    <input type="text" name="email" value="" id="email" />
+    </p><p>    
+    <label for="message">Serve yourself</label>
+    <textarea name="message" id="message" rows="8" cols="40"></textarea>
+    </p><p>
+    <input type="submit" value="Send" /></p>
+</form>
+{% endblock %}
+{% block extra %}
+<h2>Latest Series</h2>
+<p>{{last_serie}}</p>
+{% with last_serie.foto_set.all.1 as foto %}
+
+<a href="{% url foto foto.id %}" class="sample">
+   <img src="{{MEDIA_URL}}/{{foto.image|thumbnail:'150x150'}}" />
+</a>
+{% endwith %}
+<h2>Also by elian</h2>
+<p><a href="http://flickr.com/elianhi">Flickr sets</a></p>
+<p><a href="http://flickr.com/elianhi">Expositions</a></p>
+
+{% endblock %}
+
+{% block nav %}
+<ul>
+    <li><a href="{% url work %}" >Work</a></li>
+    <li><a href="{% url about %}" >About</a></li>
+    <li><a class="selected" href="{% url contact %}" >Contact</a></li>
+
+</ul>
+{% endblock nav %}            

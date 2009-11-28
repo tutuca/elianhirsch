@@ -31,7 +31,7 @@ def serie(request,cat_slug, serie_slug):
     return list_detail.object_detail(request, 
                 series,
                 slug=serie_slug,
-                extra_context = {'descendants':category.get_descendants()},
+                extra_context={'category':category},
                 template_name='serie.html')
 
 
@@ -41,13 +41,15 @@ def gallery(request, serie_slug):
     return list_detail.object_list(request, 
                 fotos,
                 paginate_by=12,
-                extra_context={'serie':serie},
+                extra_context={'serie':serie,'category':serie.category},
                 template_name='gallery.html')
 
 def foto(request, foto_id):
     fotos = Foto.objects.all()
+    category = fotos.get(id=foto_id).serie.category
+
     return list_detail.object_detail(request, 
                 fotos,
                 object_id=foto_id,
-                extra_context={'object_list':fotos},
+                extra_context={'object_list':fotos,'category':category},
                 template_name='foto.html')

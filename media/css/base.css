@@ -1,6 +1,6 @@
 body {
     font:10px Verdana, Helvetica, sans-serif;
-    background:#f0f0f0 url(../img/bg_body.jpg);
+    background:#f0f0f0 url(../img/bg_body.jpg) repeat-x;
     text-align:center;
 }
 h1, h2, h3 {
@@ -29,11 +29,22 @@ li {
 p {
     margin:0;
 }
+form p {
+    margin-bottom:1em;
+}
 
+label {
+    display:block;
+}
+.honeypot {
+    position:absolute;
+    left:-9999px;
+}
 .visualClear {
     clear:both;
 }
 .discreet {
     color:#999;
 }
+
 
