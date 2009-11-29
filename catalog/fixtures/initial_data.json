@@ -5,9 +5,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/crisis.jpg", 
+      "created": "2009-11-27 15:05:50", 
       "name": "crisis", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:05:50"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -16,9 +16,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/crisis2.jpg", 
+      "created": "2009-11-27 15:06:05", 
       "name": "crisis2", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:05"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -27,9 +27,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/misho.jpg", 
+      "created": "2009-11-27 15:06:23", 
       "name": "misho", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:23"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -37,10 +37,10 @@
     "model": "catalog.foto", 
     "fields": {
       "serie": 1, 
-      "detail": "Size of the detail 10x10", 
       "image": "images/copenaghen/portada.jpg", 
+      "created": "2009-11-27 15:06:39", 
       "name": "portada", 
-      "created": "2009-11-27 15:06:39"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -49,9 +49,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -60,9 +60,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -71,9 +71,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -82,9 +82,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -93,9 +93,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -104,9 +104,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -115,9 +115,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -126,9 +126,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -137,9 +137,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -148,9 +148,9 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
@@ -159,27 +159,27 @@
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
-  },   
+  }, 
   {
     "pk": 16, 
     "model": "catalog.foto", 
     "fields": {
       "serie": 1, 
       "image": "images/copenaghen/ship.jpg", 
+      "created": "2009-11-27 15:06:56", 
       "name": "ship", 
-      "detail": "Size of the detail 10x10", 
-      "created": "2009-11-27 15:06:56"
+      "detail": "Size of the detail 10x10"
     }
   }, 
   {
     "pk": 1, 
     "model": "catalog.category", 
     "fields": {
-      "rght": 2, 
+      "rght": 6, 
       "name": "Art", 
       "parent": null, 
       "level": 0, 
@@ -189,10 +189,88 @@
     }
   }, 
   {
+    "pk": 2, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 3, 
+      "name": "Places", 
+      "parent": 1, 
+      "level": 1, 
+      "lft": 2, 
+      "tree_id": 1, 
+      "slug": "places"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 2, 
+      "name": "Architecture", 
+      "parent": null, 
+      "level": 0, 
+      "lft": 1, 
+      "tree_id": 2, 
+      "slug": "architecture"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 4, 
+      "name": "Photography", 
+      "parent": null, 
+      "level": 0, 
+      "lft": 1, 
+      "tree_id": 3, 
+      "slug": "photography"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 2, 
+      "name": "Other", 
+      "parent": null, 
+      "level": 0, 
+      "lft": 1, 
+      "tree_id": 4, 
+      "slug": "other"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 3, 
+      "name": "Landscapes", 
+      "parent": 4, 
+      "level": 1, 
+      "lft": 2, 
+      "tree_id": 3, 
+      "slug": "landscapes"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "catalog.category", 
+    "fields": {
+      "rght": 5, 
+      "name": "Transport", 
+      "parent": 1, 
+      "level": 1, 
+      "lft": 4, 
+      "tree_id": 1, 
+      "slug": "transport"
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "catalog.serie", 
     "fields": {
-      "category": 1, 
+      "category": 2, 
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
       "created": "2009-11-27 15:05:50", 
       "slug": "copenaghen", 
