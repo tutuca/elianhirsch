@@ -73,7 +73,10 @@
 }
 .img_detail{
     overflow:hidden;
-    height:32em;
+    height:34em;
+    position:relative;
+}
+.img_detail img {
 }
 
 .img_navigation{

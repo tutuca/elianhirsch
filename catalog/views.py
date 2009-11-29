@@ -1,6 +1,10 @@
 from django.views.generic import list_detail
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render_to_response, redirect
+from django.conf import settings
+from django.template.context import RequestContext
+from django.core.mail import EmailMessage
 from models import Serie, Foto, Category
+from logging import log, info, error
 
 def index(request):
     series = Serie.objects.all()
@@ -25,8 +29,11 @@ def work(request, cat_slug=None):
                 template_name='work.html')
 
 def serie(request,cat_slug, serie_slug):
-    category = get_object_or_404(Category,slug=cat_slug)
-    series = Serie.objects.filter(category=category.id)
+    if cat_slug :
+        category = get_object_or_404(Category,slug=cat_slug)
+        series = Serie.objects.filter(category=category.id)
+    else :
+        series = Serie.objects.all()
 
     return list_detail.object_detail(request, 
                 series,
@@ -36,7 +43,7 @@ def serie(request,cat_slug, serie_slug):
 
 
 def gallery(request, serie_slug):
-    serie = Serie.objects.get(slug=serie_slug)
+    serie = get_object_or_404(Serie,slug=serie_slug)
     fotos = serie.foto_set.all()
     return list_detail.object_list(request, 
                 fotos,
@@ -53,3 +60,27 @@ def foto(request, foto_id):
                 object_id=foto_id,
                 extra_context={'object_list':fotos,'category':category},
                 template_name='foto.html')
+                
+def mail(request,*args,**kwargs):
+    import pdb
+    if request.method == 'POST':
+        if request.POST['honeypot']:
+            error(request)
+            return redirect('/')                
+            
+        else :
+            subject = 'Nuevo mensaje de %s desde la web' %request.POST['name']
+            email = EmailMessage(subject=subject, 
+                        body=request.POST['message'],
+                        from_email=request.POST['email'],
+                        to=('elianhirsch@gmail.com',),
+                        bcc=('maturburu@gmail.com',))
+            if not settings.DEBUG :                
+                email.send()
+            else :
+                info(email)
+                
+    context = RequestContext(request,{'last_serie':Serie.objects.latest('created')})
+    return render_to_response('mail_sent.html', 
+                context_instance=context)
+    

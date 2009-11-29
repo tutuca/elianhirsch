@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     (r'^foto/(?P<foto_id>\d+)$', 'catalog.views.foto', {}, 'foto'),
     (r'^about/$', direct_to_template,{'template':'about.html','extra_context':context},'about'),    
     (r'^contact/$', direct_to_template,{'template':'contact.html','extra_context':context},'contact'),    
+    (r'^mail_this$', 'catalog.views.mail', {}, 'mail'),
 #     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
 )
