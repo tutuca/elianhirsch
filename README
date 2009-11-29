@@ -1,0 +1,21 @@
+Requiere:
+    python2.6 (http://www.python.org)
+    setuptools
+    PIL (python image library)
+
+
+Install:    
+    Una vez instalado, en el directorio del proyecto (elian) correr:
+    
+    $ easy_install pip
+    $ pip install -r req.txt
+    
+    si termina correctamente se puede correr:
+
+    $ python ./manage.py syncdb
+
+    luego levantar el servidor
+    
+    $ python ./manage.py runserver
+    
+    y apuntar el navegador a http://localhost:8000
