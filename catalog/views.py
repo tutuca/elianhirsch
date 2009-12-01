@@ -64,6 +64,10 @@ def foto(request, foto_id):
 def mail(request,*args,**kwargs):
     import pdb
     if request.method == 'POST':
+        if not request.POST['name'] or not request.POST['email']:
+            ''' Redirect to the form with an error message showing 
+            the required fields '''
+            pass
         if request.POST['honeypot']:
             error(request)
             return redirect('/')                
@@ -80,7 +84,7 @@ def mail(request,*args,**kwargs):
             else :
                 info(email)
                 
-    context = RequestContext(request,{'last_serie':Serie.objects.latest('created')})
     return render_to_response('mail_sent.html', 
-                context_instance=context)
+                {'last_serie':Serie.objects.latest('created')}
+                )
     
